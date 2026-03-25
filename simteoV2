@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simteo Électricité - Électricien Avignon 24/7</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .sticky-cta { display: block; }
+            .content-padding { padding-bottom: 80px; }
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 content-padding">
+
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-blue-600 p-2 rounded-lg text-white">
+                        <i class="fas fa-bolt text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-extrabold tracking-tight text-slate-900">SIMTEO</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-slate-600 hover:text-blue-600 font-medium">Services</a>
+                    <a href="#proximite" class="text-slate-600 hover:text-blue-600 font-medium">Zone d'intervention</a>
+                    <a href="tel:0652228988" class="bg-blue-600 text-white px-5 py-2.5 rounded-full font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200">
+                        06 52 22 89 88
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <a href="tel:0652228988" class="text-blue-600 font-bold text-sm">URGENCE 24/7</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white relative overflow-hidden py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center space-x-2 bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-semibold mb-6">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                        </span>
+                        <span>Disponible maintenant à Avignon</span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                        Besoin d'un <span class="text-blue-400">Électricien</span> de Confiance ?
+                    </h1>
+                    <p class="text-lg text-slate-300 mb-8 max-w-lg">
+                        Artisan certifié intervenant 24h/24 et 7j/7. Devis 100% transparent. Travail garanti et sécurité assurée.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="tel:0652228988" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-center font-bold text-lg shadow-xl shadow-blue-900/20 transition transform hover:-translate-y-1">
+                            📞 URGENCE 24/7
+                        </a>
+                        <a href="#contact" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-sm px-8 py-4 rounded-xl text-center font-bold text-lg transition">
+                            Demander un devis
+                        </a>
+                    </div>
+                </div>
+                <div class="relative hidden md:block">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" alt="Électricien professionnel" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Badge flottant -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-2xl text-slate-900">
+                        <div class="flex items-center space-x-3">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="font-bold">5/5 Google</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Social Proof -->
+    <section class="bg-white py-8 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-8 md:gap-16 items-center text-slate-400">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-shield-alt text-2xl"></i>
+                <span class="font-semibold">Assurance Décennale</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-check-circle text-2xl"></i>
+                <span class="font-semibold">Norme NF C 15-100</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-clock text-2xl"></i>
+                <span class="font-semibold">Intervention < 1h</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Nos Services Expertise</h2>
+            <div class="h-1.5 w-20 bg-blue-600 mx-auto rounded-full"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 card-shadow transition hover:border-blue-200">
+                <div class="w-14 h-14 bg-red-100 text-red-600 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-tools text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">Dépannage 24/7</h3>
+                <p class="text-slate-600 mb-6">Panne de courant ou court-circuit ? Nous sécurisons votre logement et réparons l'origine du problème immédiatement.</p>
+                <ul class="space-y-2 text-sm font-medium text-slate-500">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i> Disponible Nuit & Weekend</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i> Diagnostic précis</li>
+                </ul>
+            </div>
+            <!-- Service 2 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 card-shadow transition hover:border-blue-200">
+                <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-home text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">Mise en Conformité</h3>
+                <p class="text-slate-600 mb-6">Mise aux normes NF C 15-100 pour protéger votre foyer. Remplacement de tableaux électriques obsolètes.</p>
+                <ul class="space-y-2 text-sm font-medium text-slate-500">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i> Tableau de grande marque</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i> Certificat de conformité</li>
+                </ul>
+            </div>
+            <!-- Service 3 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 card-shadow transition hover:border-blue-200">
+                <div class="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-lightbulb text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">Rénovation Électrique</h3>
+                <p class="text-slate-600 mb-6">Modernisation de vos installations, ajout de prises, domotique et éclairage LED pour un maximum de confort.</p>
+                <ul class="space-y-2 text-sm font-medium text-slate-500">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i> Finition impeccable</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i> Conseil économie d'énergie</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="bg-slate-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 italic">"Le travail d'un bon électricien ne doit jamais se voir."</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-600 p-2 rounded-lg"><i class="fas fa-bolt"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg">Zéro Surprise sur les Tarifs</h4>
+                            <p class="text-slate-400">Devis validé par vos soins avant le début des travaux. Pas un centime de plus.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-600 p-2 rounded-lg"><i class="fas fa-broom"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg">Chantier Toujours Propre</h4>
+                            <p class="text-slate-400">Nous nettoyons tout derrière nous. Vous retrouvez votre maison impeccable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                <h3 class="text-2xl font-bold mb-6 flex items-center">
+                    <i class="fas fa-quote-left text-blue-500 mr-3"></i> Témoignage Client
+                </h3>
+                <p class="text-xl text-slate-300 italic mb-6">"Électricien très réactif suite à un court-circuit un dimanche soir. Intervention soignée et prix très correct. Je recommande Simteo sans hésiter !"</p>
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center font-bold">JD</div>
+                    <div>
+                        <p class="font-bold">Jean-Marc D.</p>
+                        <p class="text-sm text-slate-500">Client à Avignon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intervention Zone -->
+    <section id="proximite" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="bg-blue-50 rounded-3xl p-8 md:p-12 overflow-hidden relative">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Votre Électricien de Proximité</h2>
+                    <p class="text-slate-600 mb-8 text-lg">Basés à Avignon, nous intervenons dans un rayon de 30km sous 1 heure pour les urgences.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-2 text-slate-700">
+                            <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            <span class="font-medium">Avignon</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-slate-700">
+                            <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            <span class="font-medium">Le Pontet</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-slate-700">
+                            <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            <span class="font-medium">Villeneuve</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-slate-700">
+                            <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            <span class="font-medium">Les Angles</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-64 rounded-2xl overflow-hidden grayscale contrast-125 border-2 border-white">
+                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2033&auto=format&fit=crop" alt="Plan de zone" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Questions fréquentes</h2>
+            <div class="space-y-4">
+                <details class="group border border-slate-200 rounded-xl p-4 bg-slate-50">
+                    <summary class="list-none font-bold text-lg cursor-pointer flex justify-between items-center">
+                        Faites-vous payer le déplacement ?
+                        <i class="fas fa-chevron-down text-slate-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="mt-4 text-slate-600 leading-relaxed">Le déplacement est offert pour toute intervention validée. Dans le cadre d'un diagnostic seul, nous annonçons les frais par téléphone avant de nous déplacer.</p>
+                </details>
+                <details class="group border border-slate-200 rounded-xl p-4 bg-slate-50">
+                    <summary class="list-none font-bold text-lg cursor-pointer flex justify-between items-center">
+                        Quels sont vos délais d'intervention ?
+                        <i class="fas fa-chevron-down text-slate-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="mt-4 text-slate-600 leading-relaxed">Pour une urgence (coupure totale, odeur de brûlé), nous intervenons généralement en moins de 60 minutes sur le secteur d'Avignon.</p>
+                </details>
+                <details class="group border border-slate-200 rounded-xl p-4 bg-slate-50">
+                    <summary class="list-none font-bold text-lg cursor-pointer flex justify-between items-center">
+                        Êtes-vous assuré en cas de problème ?
+                        <i class="fas fa-chevron-down text-slate-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="mt-4 text-slate-600 leading-relaxed">Oui, nous possédons une assurance responsabilité civile et une garantie décennale à jour, couvrant l'ensemble de nos travaux pour votre sécurité.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-slate-900 text-white pt-20 pb-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="bg-blue-600 p-2 rounded-lg text-white">
+                            <i class="fas fa-bolt text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold">SIMTEO</span>
+                    </div>
+                    <p class="text-slate-400 mb-8 max-w-md">Votre électricien expert à Avignon pour tous vos dépannages, installations et mises aux normes. Disponible 24h/24 et 7j/7.</p>
+                    <div class="flex space-x-4">
+                        <a href="tel:0652228988" class="bg-white/10 w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <div class="bg-white/10 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fab fa-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Contact</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex items-center space-x-3 italic">
+                            <i class="fas fa-map-marker-alt text-blue-500"></i>
+                            <span>Impasse Monplaisir, Avignon</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone-alt text-blue-500"></i>
+                            <span class="font-bold">06 52 22 89 88</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-blue-500"></i>
+                            <span>Urgence 24h/24 & 7j/7</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Légal</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#" class="hover:text-white transition">Mentions Légales</a></li>
+                        <li><a href="#" class="hover:text-white transition">Politique de Confidentialité</a></li>
+                        <li><a href="#" class="hover:text-white transition">Plan du site</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-slate-500 text-sm">
+                <p>&copy; 2024 Simteo Électricité Avignon. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="sticky-cta px-4 py-3 bg-white/95 backdrop-blur-md border-t border-slate-200 shadow-[0_-10px_20px_-10px_rgba(0,0,0,0.1)]">
+        <div class="flex space-x-3">
+            <a href="tel:0652228988" class="flex-1 bg-blue-600 text-white py-3.5 rounded-xl font-extrabold text-center text-lg flex items-center justify-center shadow-lg shadow-blue-200">
+                <i class="fas fa-phone-alt mr-2"></i> APPELER MAINTENANT
+            </a>
+            <a href="#contact" class="flex-none bg-slate-100 text-slate-900 px-6 py-3.5 rounded-xl font-bold flex items-center justify-center">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Script pour défilement fluide vers les ancres
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
